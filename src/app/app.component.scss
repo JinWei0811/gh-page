@@ -1,7 +1,14 @@
 .container {
+  background-color: #f0f8ff; // 柔和背景
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
+  margin-top: 100px;
+
+  // 手機畫面最小寬度設定
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .title {
@@ -9,28 +16,55 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
+
   h1 {
-    font-size: 48px;
+    font-size: 5vw; // 使用 vw 做響應式縮放
+    margin: 0;
+    text-align: center;
+    color: #2c3e50; // 主標深藍灰
   }
-  img{
-    width: 45px;
-    height: 45px;
+
+  img {
+    width: 10vw;
+    height: 10vw;
+    max-width: 50px;
+    max-height: 50px;
   }
 }
 
 .body {
   display: flex;
   justify-content: center;
+
   span {
-    font-size: 32px;
+    font-size: 6vw;
+    text-align: center;
+    color: #e67e22; // 倒數橘色
   }
 }
 
 .img {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
   img {
-    width: 40;
-    height: 40;
+    width: 15vw;
+    height: 15vw;
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+// 可選：針對超小螢幕再微調
+@media (max-width: 360px) {
+  .title h1 {
+    font-size: 6vw;
+  }
+
+  .body span {
+    font-size: 7vw;
   }
 }
