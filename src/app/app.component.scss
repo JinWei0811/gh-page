@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  h1 {
+    font-size: 48px;
+  }
+  img{
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 32px;
+  }
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 40;
+    height: 40;
+  }
+}
